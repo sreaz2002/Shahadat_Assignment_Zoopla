@@ -8,12 +8,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Wait {
 	
-	public void getExplicitWait(WebDriver driver, WebElement element) {
+	public static void getExplicitWaitByElement(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public void getExplicitWait(WebDriver driver, By locator) {
+	public  void getExplicitWaitByLocator(WebDriver driver, By locator) {
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}

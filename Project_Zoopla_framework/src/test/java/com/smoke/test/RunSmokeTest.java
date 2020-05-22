@@ -1,12 +1,17 @@
 package com.smoke.test;
 
 import com.generic.code.BaseLogin;
-
-public class RunSmokeTest {
+import com.generic.code.PropertyallSelectionPage;
+ 
+public class RunSmokeTest  {
 
 	public static void main(String[] args) throws Throwable {
 		
-		BaseLogin.getLogin();
+		PropertyallSelectionPage.propertySelections();
+		
+		//BaseLogin.getLogin();
+		
+		//getLogin();
 
 	}
 
