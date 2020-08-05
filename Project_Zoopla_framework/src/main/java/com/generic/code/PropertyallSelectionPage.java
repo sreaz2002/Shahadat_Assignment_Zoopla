@@ -66,7 +66,7 @@ public class PropertyallSelectionPage extends BaseLogin {
 	 	TakeAppScreenShot.captureScreenShot(driver, "Agent Name");
 	 System.out.println("Agent Name  ="+ page.getagentName().getText());
 	TakeAppScreenShot.captureScreenShot(driver, "Agent Telephone");
-	System.out.println("Agent Telephone#"+ page.getPhoneAgent().getText()); 
+	System.out.println("Agent Telephone #"+ page.getPhoneAgent().getText()); 
 	
 	 Actions signout=new Actions(driver);
 	 signout.moveToElement(page.getzoplaPage()).build().perform();

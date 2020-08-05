@@ -31,13 +31,15 @@ public class PropertyyPage {
 	@FindBy(xpath="(//*[@class='ui-agent__name'])[1]") 
 	private WebElement agentName;
 			
-	@FindBy(xpath="(//*[@class='ui-link'])[4]") 
+	@FindBy(xpath="(//*[@class='ui-agent__tel ui-agent__text'])[1]") 
 	private WebElement PhoneAgent;
-	@FindBy(xpath="(//*[@class='ui-nav-account-list__item'])[4]") 
+	@FindBy(xpath="(//*[text()='My Zoopla'])[1]") 
 	private WebElement zoplaPage;
 	//*[@class='icon--logged-out']
 	
-	@FindBy(xpath="//*[contains(text(),'Sign out')]") 
+	//(//*[@class='ewzihio0 css-1rxdwmd e1lra66m0'])[5]
+	@FindBy(xpath="(//*[@class='ewzihio0 css-1rxdwmd e1lra66m0'])[5]") 
+	//*[contains(text(),'Sign out')]
 	private WebElement logOutPage;
 	
 	public WebElement getlogOutPage() { 

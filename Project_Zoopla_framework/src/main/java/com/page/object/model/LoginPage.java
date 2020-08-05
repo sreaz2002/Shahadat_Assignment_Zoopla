@@ -12,7 +12,7 @@ public class LoginPage {
 	}
 	@FindBy(xpath="//button[@class='ui-button-primary ui-cookie-accept-all-medium-large']")
 	private WebElement acceptCookie;
-	@FindBy(xpath="//a[@class='button button--tertiary-dark account-link__text']")
+	@FindBy(xpath="//*[text()='Sign in']")
 	private WebElement signInBtn;
 	@FindBy(xpath="//input[@id='signin_email']")
 	private WebElement email;
