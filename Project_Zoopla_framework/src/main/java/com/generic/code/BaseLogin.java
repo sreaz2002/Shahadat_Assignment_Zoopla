@@ -30,7 +30,7 @@ public class BaseLogin {
 		
 		driver.manage().window().maximize();
 		driver.get(BaseConfig.getConfig("URL")); 
-				
+		Highlighter.getcolor(driver, login.getAcceptCookie());			
 		login.getAcceptCookie().click();
 
 		

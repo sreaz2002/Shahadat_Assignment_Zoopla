@@ -41,7 +41,7 @@ public class PropertyallSelectionPage extends BaseLogin {
 	    	 
 	    	allprice= page.homePrice().get(i).getText().split(" ");
 	   
-	     price.add(Integer.parseInt(allprice[0].replace("£", "").replace(",","").trim()));
+	     price.add(Integer.parseInt(allprice[0].replace("Â£", "").replace(",","").trim()));
 	   // price.add(Integer.parseInt(allprice[0]));
 	    	//System.out.println(page.homePrice().get(i).getText()); //only for price list
 	    	
